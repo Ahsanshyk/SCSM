@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">SCSM</string>
+    <string name="send_urgent_parcel">Send Urgent Parcel</string>
+    <string name="send_normal_parcel">Send Normal Parcel</string>
+    <string name="smart_courierservice_machine">Smart CourierService\n Machine</string>
+    <string name="receiver_details">RECEIVER DETAILS</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_contact_number">03XX-XXXXXXX</string>
+    <string name="hint_city">Select City</string>
+    <string name="hint_address">Enter Address</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_next">Next</string>
+    <string name="top_curve_desc">Top curve image</string>
+    <string name="bottom_curve_desc">Bottom curve image</string>
+    <string name="reciever_full_name">Reciever Full Name</string>
+    <string name="enter_full_name">Enter Full Name</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="enter_contact_number">Enter Contact Number</string>
+    <string name="city">City</string>
+    <string name="address">Address</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="sender_full_name">Sender Full Name</string>
+    <string name="sender_details">SENDER DETAILS</string>
+    <string name="documents">Documents</string>
+    <string name="electronics">Electronics</string>
+    <string name="clothing">Clothing</string>
+    <string name="others">Others</string>
+    <string name="if_others">If Others:</string>
+    <string name="please_specify">Please specify...</string>
+    <string name="parcel_type">PARCEL TYPE</string>
+
+</resources>
