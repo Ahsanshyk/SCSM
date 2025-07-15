@@ -28,21 +28,26 @@
         android:textColor="#000000"
         android:textSize="28sp"
         android:textStyle="bold"
-        android:layout_marginBottom="100dp"
-        app:layout_constraintBottom_toTopOf="@id/details"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topCurve"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/topCurve" />
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Receiver Form -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/reciverTitle"
+        app:layout_constraintBottom_toTopOf="@id/bottomButtons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
     <LinearLayout
         android:id="@+id/details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="@id/bottomButtons"
-        app:layout_constraintTop_toTopOf="@id/reciverTitle"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent">
+        android:padding="16dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -133,6 +138,8 @@
             android:layout_marginBottom="16dp" />
 
     </LinearLayout>
+
+    </ScrollView>
 
     <!-- Bottom Curve -->
     <ImageView

@@ -15,13 +15,22 @@ public class StartActivity extends AppCompatActivity {
 
         // Find the button by its ID
         Button normalButton = findViewById(R.id.btn_normal);
+        Button urgentButton = findViewById(R.id.btn_urgent);
+
+        urgentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StartActivity.this, ReciverDetailActivity.class);
+                startActivity(intent);
+            }
+        });
 
         // Set an OnClickListener for the button
         normalButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Create an Intent to start SenderDetailActivity
-                Intent intent = new Intent(StartActivity.this, SenderDetail.class);
+                Intent intent = new Intent(StartActivity.this, ReciverDetailActivity.class);
                 // Start the new activity
                 startActivity(intent);
             }
