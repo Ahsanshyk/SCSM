@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1012386888303",
+    "project_id": "scsm-1f141",
+    "storage_bucket": "scsm-1f141.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012386888303:android:b0af2042fcd0e2b2572b9a",
+        "android_client_info": {
+          "package_name": "com.example.scsm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAynjKN6828j1Z0wQcuG7jcziXgfHgf-F8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

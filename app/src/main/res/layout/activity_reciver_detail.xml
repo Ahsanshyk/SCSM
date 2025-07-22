@@ -11,7 +11,7 @@
     <ImageView
         android:id="@+id/topCurve"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="100dp"
         android:src="@drawable/up_curve"
         android:scaleType="fitEnd"
         android:contentDescription="@string/top_curve_desc"
@@ -33,126 +33,130 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <!-- Receiver Form -->
+
+    <!-- Bottom Curve -->
+<!--    <ImageView-->
+<!--        android:id="@+id/bottomCurve"-->
+<!--        android:layout_width="270dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:contentDescription="@string/bottom_curve_desc"-->
+<!--        android:scaleType="fitXY"-->
+<!--        android:src="@drawable/down_curve"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!-- Bottom Buttons -->
+
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:fillViewport="true"
-        app:layout_constraintTop_toBottomOf="@id/reciverTitle"
         app:layout_constraintBottom_toTopOf="@id/bottomButtons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/reciverTitle"
+        app:layout_constraintVertical_bias="1.0">
 
-    <LinearLayout
-        android:id="@+id/details"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/reciever_full_name"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:fontFamily="@font/poppins_bold"
-            android:layout_marginStart="20dp"
-            android:layout_marginBottom="8dp" />
-
-        <EditText
-            android:id="@+id/receiver_full_name"
+        <LinearLayout
+            android:id="@+id/details"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/enter_full_name"
-            android:inputType="textPersonName"
-            android:padding="15dp"
-            android:autofillHints="name"
-            android:layout_marginStart="10dp"
-            android:layout_marginBottom="16dp" />
+            android:orientation="vertical"
+            android:padding="16dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/contact_number"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:fontFamily="@font/poppins_bold"
-            android:layout_marginStart="20dp"
-            android:layout_marginBottom="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/reciever_full_name"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/r_contact_number"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/enter_contact_number"
-            android:inputType="phone"
-            android:autofillHints="phone"
-            android:padding="15dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginBottom="16dp" />
+            <EditText
+                android:id="@+id/receiver_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="16dp"
+                android:autofillHints="name"
+                android:hint="@string/enter_full_name"
+                android:inputType="textPersonName"
+                android:padding="15dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/city"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:fontFamily="@font/poppins_bold"
-            android:layout_marginStart="20dp"
-            android:layout_marginBottom="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/contact_number"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-        <Spinner
-            android:id="@+id/r_spinner_city"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="12dp"
-            android:minHeight="48dp"
-            android:layout_marginStart="10dp"
-            android:spinnerMode="dropdown"
-            android:layout_marginBottom="16dp" />
+            <EditText
+                android:id="@+id/r_contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="16dp"
+                android:autofillHints="phone"
+                android:hint="@string/enter_contact_number"
+                android:inputType="phone"
+                android:padding="15dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/address"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:fontFamily="@font/poppins_bold"
-            android:layout_marginStart="20dp"
-            android:layout_marginBottom="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/city"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/r_address"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:hint="@string/enter_address"
-            android:inputType="textMultiLine"
-            android:gravity="top"
-            android:padding="12dp"
-            android:autofillHints="postalAddress"
-            android:layout_marginStart="10dp"
-            android:layout_marginBottom="16dp" />
+            <Spinner
+                android:id="@+id/r_spinner_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:spinnerMode="dropdown" />
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/address"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/r_address"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="16dp"
+                android:autofillHints="postalAddress"
+                android:gravity="top"
+                android:hint="@string/enter_address"
+                android:inputType="textMultiLine"
+                android:padding="12dp" />
+
+        </LinearLayout>
 
     </ScrollView>
 
-    <!-- Bottom Curve -->
-    <ImageView
-        android:id="@+id/bottomCurve"
-        android:layout_width="270dp"
-        android:layout_height="150dp"
-        android:contentDescription="@string/bottom_curve_desc"
-        android:scaleType="fitXY"
-        android:src="@drawable/down_curve"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <!-- Bottom Buttons -->
     <LinearLayout
         android:id="@+id/bottomButtons"
         android:layout_width="0dp"

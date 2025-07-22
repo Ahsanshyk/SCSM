@@ -30,5 +30,10 @@
     <string name="if_others">If Others:</string>
     <string name="please_specify">Please specify...</string>
     <string name="parcel_type">PARCEL TYPE</string>
+    <string name="proceed_to_payment">Proceed To Payment</string>
+    <string name="charges">Charges</string>
+    <string name="delivery_type">Delivery Type</string>
+    <string name="destination_city">Destination City</string>
+    <string name="parcel_weight">Parcel Weight</string>
 
 </resources>
